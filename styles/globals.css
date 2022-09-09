@@ -1,3 +1,26 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@layer components{
+    .button{
+        @apply bg-indigo-500 py-1 mt-1 px-1 text-center font-medium text-white inline-block rounded-md border border-transparent hover:bg-indigo-600;
+    }
+    .buttonLanding{
+        @apply bg-gray-800 py-3 mt-4 px-5 text-center font-medium text-white inline-block rounded-md border border-transparent hover:bg-gray-900;
+    }
+    .buttonFactuurAanmaken{
+        @apply bg-indigo-500 py-1 h-10 px-2 mr-2 text-center font-medium text-white inline-block rounded-md border border-transparent hover:bg-indigo-600;
+    }
+    .standardButton{
+        @apply inline-flex items-center px-5 py-2.5 text-sm font-medium text-center text-white bg-gray-800 rounded-lg hover:bg-blue-800 dark:bg-gray-700 dark:hover:bg-gray-900;
+    }
+}
+@layer utilities {
+    .animation-delay-2000 {
+      animation-delay: 2s;
+    }
+    .animation-delay-4000 {
+      animation-delay: 4s;
+    }
+  }

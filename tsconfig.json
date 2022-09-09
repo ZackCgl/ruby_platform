@@ -15,6 +15,6 @@
     "jsx": "preserve",
     "incremental": true
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", "Components/StateGlobal/StateProvider.js", "pages/_app.tsxx", "pages/account/home/index.tsx", "pages/_app.js", "pages/api/auth/loginblack.js", "pages/api/auth/loginblack.js"],
   "exclude": ["node_modules"]
 }
