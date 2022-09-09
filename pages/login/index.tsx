@@ -128,7 +128,7 @@ function Login({providers}:any) {
         }
       }
       return{
-        props: { session, providers }
+        props: { providers }
       }
       
     }
