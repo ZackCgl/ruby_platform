@@ -39,7 +39,7 @@ export default function Example() {
                 
   
                 <Link href={"/login"}><div
-                  className="buttonLanding"
+                  className="buttonLanding cursor-pointer"
                 >
                   Aanmelden
                 </div>
