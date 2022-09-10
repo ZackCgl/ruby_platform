@@ -1,29 +1,10 @@
-import { getProviders, getSession, signOut } from 'next-auth/react';
+import {getSession, signOut } from 'next-auth/react';
 import Link from 'next/link';
 import React, { useEffect } from 'react';
 import { useSession } from 'next-auth/react';
 import SidebarComponent from './SidebarComponent';
 import { Popover, Transition } from '@headlessui/react'
-import {
-  ArrowPathIcon,
-  Bars3Icon,
-  BookmarkSquareIcon,
-  CalendarIcon,
-  ChartBarIcon,
-  ClipboardDocumentIcon,
-  ClipboardDocumentListIcon,
-  Cog6ToothIcon,
-  CursorArrowRaysIcon,
-  DocumentTextIcon,
-  HomeIcon,
-  LifebuoyIcon,
-  PhoneIcon,
-  PlayIcon,
-  ShieldCheckIcon,
-  Squares2X2Icon,
-  UserGroupIcon,
-  XMarkIcon,
-} from '@heroicons/react/24/outline'
+import {ClipboardDocumentIcon,Cog6ToothIcon, DocumentTextIcon,HomeIcon,UserGroupIcon,} from '@heroicons/react/24/outline'
 import { AiOutlineLogout } from 'react-icons/ai';
 
 
