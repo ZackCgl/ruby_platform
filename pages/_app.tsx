@@ -10,7 +10,7 @@ function MyApp({ Component, pageProps, session }:any) {
   return (
   <StateProvider initialState={initialState} reducer={reducer}>
     <SessionProvider session={session}>
-    <Header />
+    <Header {...pageProps}/>
       <Component {...pageProps} />
       </SessionProvider>
   </StateProvider>
