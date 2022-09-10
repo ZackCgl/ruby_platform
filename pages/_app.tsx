@@ -6,7 +6,7 @@ import { SessionProvider } from 'next-auth/react';
 import { AppProps } from 'next/app';
 
 
-function MyApp({ Component, pageProps: {session, ...pageProps} }:any) {
+function MyApp({ Component, pageProps, session }:any) {
   return (
   <StateProvider initialState={initialState} reducer={reducer}>
     <SessionProvider session={session}>

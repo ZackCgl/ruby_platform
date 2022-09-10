@@ -4450,6 +4450,11 @@
     "object-hash" "^2.0.1"
     "oidc-token-hash" "^5.0.1"
 
+"openssl@^2.0.0":
+  "integrity" "sha512-0FgKhQ/e+XCtTTgn3qZO2g3y+Y3FC/LGvt77oObmMR4ZkZvsV1CuG/mMZClZgZqVKr0+tkemP+I3Uub4WXkHYw=="
+  "resolved" "https://registry.npmjs.org/openssl/-/openssl-2.0.0.tgz"
+  "version" "2.0.0"
+
 "p-cancelable@^0.3.0":
   "integrity" "sha512-RVbZPLso8+jFeq1MfNvgXtCRED2raz/dKpacfTNxsx6pLEpEomM7gah6VeHSYV3+vo0OAi4MkArtQcWWXuQoyw=="
   "resolved" "https://registry.npmjs.org/p-cancelable/-/p-cancelable-0.3.0.tgz"
