@@ -1,14 +1,12 @@
 import { getSession } from "next-auth/react";
+import Link from "next/link";
 import { useRouter } from "next/router";
 
 
 /* This example requires Tailwind CSS v2.0+ */
 export default function Example() {
-const router = useRouter()
 
-    const handleSign = () => {
-       router.push("/login")
-    }
+    
     return (
       <div className="relative overflow-hidden bg-white">
         <div className="pt-16 pb-80 sm:pt-24 sm:pb-40 lg:pt-40 lg:pb-48">
@@ -40,13 +38,12 @@ const router = useRouter()
                 {/* Decorative image grid */}
                 
   
-                <a
-                onClick={handleSign}
-                  href="#"
+                <Link href={"/login"}><div
                   className="buttonLanding"
                 >
                   Aanmelden
-                </a>
+                </div>
+                </Link>
               </div>
             </div>
           </div>
