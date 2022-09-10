@@ -7,7 +7,7 @@ import Sidebar from '../../../Components/Sidebar/Sidebar'
 import axios from 'axios'
 
 
-const AanmakenRe = ({kvkdata}:any) => {
+const AanmakenRe = () => {
   const { data: session } = useSession();
   const router = useRouter();
   const [kvkNew, setKvkNew] = useState<any>()
@@ -215,21 +215,7 @@ useEffect(() => {
 </div>
   )
 }
-export async function getServerSideProps() {
 
-   
-  const kvkdata =  await axios.get(`https://developers.kvk.nl/test/api/v1/zoeken?kvkNummer=69599084&pagina=1&aantal=10`).then(resp => {
-   return resp.data
-})
-  
-return{
-      
-  props: { kvkdata },
-}
-}
-
-
-export default AanmakenRe
 
 
 
