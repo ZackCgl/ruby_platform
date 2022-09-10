@@ -27,7 +27,7 @@ function Stats() {
       <div id="main-content">
          <main>
             <div className="px-4 pt-6">
-               <div className="mt-4 w-full grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4">
+               <div className="mt-4 w-80 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-4 md:w-auto ">
                   <div className="bg-white shadow rounded-lg p-4 sm:p-6 xl:p-8 ">
                      <div className="flex items-center">
                         <div className="flex-shrink-0">
@@ -68,11 +68,13 @@ function Stats() {
                      </div>
                   </div>
                </div>
-               <div className='lg:flex mt-4'>
-                  <div className='lg:w-96'>
+               <div className='lg:flex mt-6'>
+                  <div className='w-80'>
                <DebComp />
                </div>
+               <div className='w-80'>
                <TopComp />
+               </div>
                </div>
                </div>
          </main>
