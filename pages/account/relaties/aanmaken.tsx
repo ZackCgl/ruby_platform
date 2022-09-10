@@ -216,6 +216,7 @@ useEffect(() => {
   )
 }
 
+export default AanmakenRe
 
 
 

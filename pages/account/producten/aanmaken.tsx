@@ -163,5 +163,4 @@ const AanmakenPr = () => {
   )
 }
 
-
 export default AanmakenPr
