@@ -22,7 +22,12 @@ function Stats() {
   return (
     <>
 <div>
+   <div className='flex items-baseline ml-5 '>
+<p className=" text-md font-normal leading-none text-gray-900">Welkom, </p>
+<p className=" ml-2 text-xl font-bold leading-none text-gray-900">{session?.user?.name} </p>
+</div>
    <div className="flex overflow-hidden bg-white">
+      
       <div className="bg-gray-900 opacity-50 hidden fixed inset-0 z-10" id="sidebarBackdrop"></div>
       <div id="main-content">
          <main>
