@@ -29,7 +29,6 @@ const [isLoading, setIsLoading] = useState<boolean>(false)
 
 
   const sendTweet = (pro:any) =>{
-    console.log(pro)
     const getOldData = pro.Productnaam.length >= 4 && pro.Omschrijving.length >= 1 && pro.ProductEenheid.length >= 2 && pro.Prijs.length >= 1 && pro.BTW.length >=1 
     const getNewData = productnaam.length >= 4 && Omschrijving.length >= 1 && productEenheid.length >= 2 && prijs.length >= 1 && btw.length >=1
     if (getNewData || getOldData){

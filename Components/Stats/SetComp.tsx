@@ -97,7 +97,7 @@ function SetComp() {
           <dd className="mt-1 text-sm text-gray-900 sm:col-span-2 sm:mt-0">
             {settings ? <div>
           {settings.map((set: any, id: any) => {
-            return(<><div><img style={{ width: 150, height: 150 }} src={set.FactuurImg} alt="" /><Link href={`/account/instellingen/bewerken/${set.id}`}><button>Bewerk</button></Link></div></>) 
+            return(<div key={id}><img style={{ width: 150, height: 150 }} src={set.FactuurImg} alt="" /><Link href={`/account/instellingen/bewerken/${set.id}`}><button>Bewerk</button></Link></div>) 
           })}
           </div> : "Upload an image"}
           

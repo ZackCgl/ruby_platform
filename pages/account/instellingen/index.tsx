@@ -1,12 +1,12 @@
-import { getSession, useSession } from 'next-auth/react';
-import React, { useEffect, useState } from 'react'
+import { getSession } from 'next-auth/react';
+import React from 'react'
 import Sidebar from '../../../Components/Sidebar/Sidebar';
 import SetComp from '../../../Components/Stats/SetComp';
 
 
 
 const Home = () => {
-  
+
   return (
     <div className='flex'>
       <Sidebar />

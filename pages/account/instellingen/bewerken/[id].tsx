@@ -40,7 +40,6 @@ const id = () => {
   };
 
   const verzendDataPage = (e: { preventDefault: () => void }) => {
-    console.log(url)
     e.preventDefault()
   const ref = db.collection("Settings")
   if(url != null){
@@ -66,10 +65,10 @@ const id = () => {
     ))
   }, [session, settings])
 
-  console.log(settings)
+
   return (
     <div>{settings.map((set: { FactuurImg: any; }, id: any) => {
-        return (<div><img style={{ width: 150, height: 150 }} src={set.FactuurImg} alt="" /><input className='standardButton mt-3' type="file" onChange={handleImageChange} /></div>
+        return (<div key={id}><img style={{ width: 150, height: 150 }} src={set.FactuurImg} alt="" /><input className='standardButton mt-3' type="file" onChange={handleImageChange} /></div>
         )
     })}
     <div className='mt-5'>

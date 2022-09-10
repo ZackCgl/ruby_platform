@@ -3,7 +3,6 @@ import reducer, { initialState } from '../Components/StateGlobal/StateGlobal/red
 import {StateProvider} from "../Components/StateGlobal/StateGlobal/StateProvider"
 import Header from '../Components/Header/Header';
 import { SessionProvider } from 'next-auth/react';
-import { AppProps } from 'next/app';
 
 
 function MyApp({ Component, pageProps, session }:any) {
